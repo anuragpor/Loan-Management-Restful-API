@@ -1,6 +1,6 @@
 # Loan-Management-Restful-API
-For better view open readme file.
-A model LoanRequest which consists of following attributes
+
+## A model LoanRequest which consists of following attributes
 {
   customerName: String,
   phoneNo: String,
@@ -10,14 +10,14 @@ A model LoanRequest which consists of following attributes
   creditScore: Number 
 }
 
-This is a basic loan-management system API developed using Nodejs and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filteing based on status of loan
+## This is a basic loan-management system API developed using Nodejs and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filteing based on status of loan
 The starting point is server.js. Database Schema for the loan is in Models: models/loanModel.js. All the features of API are implemented in controllers/loanController.js. API testing was done using POSTMAN APP.
 
 How to use?
-1- Download the code.
-2- Run "npm install" to download all dependencies/
-3- Run "node server.js" command from the project directory in the terminal.
-4- Now API is ready to use.
+*1- Download the code.
+*2- Run "npm install" to download all dependencies/
+*3- Run "node server.js" command from the project directory in the terminal.
+*4- Now API is ready to use.
 --------------------------------------------------------------------------------------------------------------------------------------------
 Some example queries-
 
