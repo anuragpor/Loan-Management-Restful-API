@@ -194,8 +194,7 @@ Get Loan by ID - `127.0.0.1:3000/loan/607e77852d58b6658c6f6469`
 <br>
 Output:
 
-```json
-{
+```json{
     "status": "success",
     "data": {
         "loan": {
@@ -209,8 +208,7 @@ Output:
             "__v": 0
         }
     }
-}
-```
+}```
 
 
 
