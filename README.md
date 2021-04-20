@@ -1,23 +1,14 @@
 # Loan-Management-Restful-API
-
-# Example Schema
  
-This schema is awesome.
- 
-The schema defines the following properties:
- 
-## `price` (number)
- 
-Cost of the product.
-A model LoanRequest which consists of following attributes/ Schemea.
+model/loanModel consists of following attributes/ Schemea.
 
 {
- ### `customerName: String,`
- ### `phoneNo: String,`
- ### `Email: String,` 
- ### `loanAmount: Number,`
- ### `status: String`  
- ### `creditScore: Number`
+ #### `customerName: String,`
+ #### `phoneNo: String,`
+ #### `Email: String,` 
+ #### `loanAmount: Number,`
+ #### `status: String`  
+ #### `creditScore: Number`
 }
 
 **This is a basic loan-management system API developed using Nodejs and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filteing based on status of loan
@@ -94,8 +85,8 @@ Output:
 }
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------
-Get all loan(page no = 1, status: new or cancelled loans, loanAmountGreater than 8000 rupees)
-Query - 127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000&status=new,cancelled
+Get all loan(page no = 1, status: new or cancelled loans, loanAmountGreater than 8000 rupees) <br>
+Query - ``127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000&status=new,cancelled``
 
 Output:
 ```json
@@ -154,7 +145,7 @@ Output:
 }
 ```
 ----------------------------------------------------------------------------------------------------------------------------
-Delete Request or cancellation of Loan- 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
+Delete Request or cancellation of Loan- ``127.0.0.1:3000/loan/607e77852d58b6658c6f6469``
 
 Output:
 ```json
@@ -173,7 +164,7 @@ Output:
     }
 }
 ```
-Update or Patch Request: 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
+Update or Patch Request: ``127.0.0.1:3000/loan/607e77852d58b6658c6f6469``
 body - 
 ```json
 {
@@ -198,7 +189,7 @@ Output:
     }
 }
 ```
-Get Loan by ID - 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
+Get Loan by ID - ``127.0.0.1:3000/loan/607e77852d58b6658c6f6469``
 Output:
 ```json
 {
