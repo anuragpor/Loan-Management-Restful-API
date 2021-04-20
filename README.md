@@ -23,7 +23,7 @@ How to use? <br>
 Some example queries-
 
 Get all loans(with feature of pagination and selecting loan whose amount greater than 8000) <br>
-Query- ``127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000``
+Query- ```127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000```
 
 Output:
 ```json
@@ -86,7 +86,7 @@ Output:
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Get all loan(page no = 1, status: new or cancelled loans, loanAmountGreater than 8000 rupees) <br>
-Query - ``127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000&status=new,cancelled``
+Query - ```127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000&status=new,cancelled```
 
 Output:
 ```json
