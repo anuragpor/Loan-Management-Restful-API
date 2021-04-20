@@ -91,6 +91,7 @@ Get all loan(page no = 1, status: new or cancelled loans, loanAmountGreater than
 Query - 127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000&status=new,cancelled
 
 Output:
+```json
 {
     "status": "success",
     "results": 5,
@@ -144,11 +145,12 @@ Output:
         ]
     }
 }
-
+```
 ----------------------------------------------------------------------------------------------------------------------------
 Delete Request or cancellation of Loan- 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
 
 Output:
+```json
 {
     "status": "success",
     "data": {
@@ -163,13 +165,16 @@ Output:
         }
     }
 }
-
+```
 Update or Patch Request: 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
 body - 
+```json
 {
     "status": "approved"
 }
+```
 Output:
+```json
 {
     "status": "success",
     "data": {
@@ -185,9 +190,10 @@ Output:
         }
     }
 }
-
+```
 Get Loan by ID - 127.0.0.1:3000/loan/607e77852d58b6658c6f6469
 Output:
+```json
 {
     "status": "success",
     "data": {
@@ -203,6 +209,7 @@ Output:
         }
     }
 }
+```
 
 
 
