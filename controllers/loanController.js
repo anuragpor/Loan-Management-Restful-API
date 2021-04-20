@@ -1,18 +1,12 @@
 const express = require('express');
 const Loan = require('./../models/loanModel');
 
-changeQueryString = (req, res, next) => {
-  req.query.limit = 5;
-  req.query.sort = 'price,-ratingsAverage';
-  req.query.fields = 'name,price,ratingsAverage,summary,description';
-  console.log(req.query);
-  next();
-}
 
 exports.getAllLoans = async (req, res) => {
   try {
     let query = Loan.find();
     const queryObj = { ...req.query };
+    
     //Implementing Status
     if (req.query.status) {
       let str = req.query.status.split(',');
@@ -21,12 +15,14 @@ exports.getAllLoans = async (req, res) => {
         str.push('new');
       query = query.find({ $or: [{ status: str[0] }, { status: str[1] }, {status: str[2]}, {status: str[3]} ] });  // or query
     }
+    
     //Implementing LoanAmountGreater
     if (req.query.loanAmountGreater) {
       let amt = req.query.loanAmountGreater * 1;
       console.log(amt);
       query = query.find({ loanAmount: { $gt: amt}});
     }
+    
     //Implementing Pagination 
     if (req.query.page) {
       const page = req.query.page;
@@ -74,6 +70,7 @@ exports.getAllLoans = async (req, res) => {
       });
     }
   };
+
   // Find loan by ID
   exports.getLoan = async (req, res) => {
     try {
@@ -114,7 +111,7 @@ exports.updateLoan = async (req, res) => {
   }
 }
 
-//delete
+//delete or cancellation of loan
 exports.deleteLoan = async (req, res) => {
   try {
     let doc = await Loan.findById(req.params.id);
