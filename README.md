@@ -11,7 +11,7 @@ model/loanModel consists of following attributes/schema.
  #### `creditScore: Number`
 }
 
-**This is a basic loan-management system API developed using Nodejs and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filteing based on status of loan
+**This is a basic loan-management system API developed using Node.js, express.js and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filtering based on status of loan
 The starting point is server.js. Database Schema for the loan is in Models: models/loanModel.js. All the features of API are implemented in controllers/loanController.js. API testing was done using POSTMAN APP.**
 
 How to use? <br>
