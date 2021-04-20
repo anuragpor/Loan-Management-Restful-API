@@ -9,11 +9,9 @@ const loanRequestSchema = new mongoose.Schema({
   },
   phoneNo: {
     type: String,
-    // required: [true, 'A tour must have a duration'],
   },
   Email: {
     type: String,
-    // required: [true, 'A tour must have a maxGroupSize'],
    },
    loanAmount: Number,
    status: String,
