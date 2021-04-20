@@ -12,12 +12,12 @@ Cost of the product.
 A model LoanRequest which consists of following attributes/ Schemea.
 
 {
-  `customerName: String,`
-  `phoneNo: String,`
-  `Email: String,`
-  `loanAmount: Number,`
-  `status: String`  // one of these fields {New, Approved, Rejected,Cancelled}
-  `creditScore: Number` 
+ ### `customerName: String,`
+ ### `phoneNo: String,`
+ ### `Email: String,` 
+ ### `loanAmount: Number,`
+ ### `status: String`  
+ ### `creditScore: Number`
 }
 
 **This is a basic loan-management system API developed using Nodejs and MongoDB using rest architecture and MVC design pattern. API can handle get, post, patch, delete. Also, features like pagination(limiting five documents per page) and filtering data like getting loan amounts greater than 8000 rupees. Filteing based on status of loan
