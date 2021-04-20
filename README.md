@@ -1,6 +1,6 @@
 # Loan-Management-Restful-API
  
-model/loanModel consists of following attributes/ Schemea.
+model/loanModel consists of following attributes/schema.
 
 {
  #### `customerName: String,`
@@ -22,7 +22,7 @@ How to use? <br>
 --------------------------------------------------------------------------------------------------------------------------------------------
 Some example queries-
 
-Get all loans(with feature of pagination and selecting loan whose amount greater than 8000)
+Get all loans(with feature of pagination and selecting loan whose amount greater than 8000) <br>
 Query- ``127.0.0.1:3000/loan/?page=1&loanAmountGreater=8000``
 
 Output:
@@ -146,7 +146,7 @@ Output:
 ```
 ----------------------------------------------------------------------------------------------------------------------------
 Delete Request or cancellation of Loan- ``127.0.0.1:3000/loan/607e77852d58b6658c6f6469``
-
+<br>
 Output:
 ```json
 {
@@ -171,6 +171,7 @@ body -
     "status": "approved"
 }
 ```
+<br>
 Output:
 ```json
 {
@@ -190,6 +191,7 @@ Output:
 }
 ```
 Get Loan by ID - ``127.0.0.1:3000/loan/607e77852d58b6658c6f6469``
+<br>
 Output:
 ```json
 {
